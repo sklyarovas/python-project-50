@@ -1,7 +1,7 @@
 install:
 	uv sync
 
-gendiff:
+run:
 	uv run gendiff
 
 build:
@@ -12,3 +12,11 @@ package-install:
 
 lint:
 	uv run ruff check gendiff
+
+test:
+	uv run pytest
+
+test-coverage:
+	uv run pytest --cov=gendiff --cov-report=xml:coverage.xml
+
+check: test lint

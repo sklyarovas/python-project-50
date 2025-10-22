@@ -1,9 +1,11 @@
-from gendiff import prepare_collections, generate_diff
+from gendiff import make_diff, prepare_collections
+from gendiff.formatters.stylish import stylish_diff
 
 
-def core(format, *filepaths): # format пока что не используется
+def core(format, *filepaths):
     coll1, coll2 = prepare_collections(*filepaths)
-    diff = generate_diff(coll1, coll2)
-    print(diff)
+    diff = make_diff(coll1, coll2)
+    formated_diff = stylish_diff(diff)
 
-    return diff
+    print(formated_diff)
+    return formated_diff
