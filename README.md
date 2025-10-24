@@ -39,5 +39,6 @@ make check
 * Поддерживаемые форматы вывода: stylish (default), plain
 
 ### Demo
-* [stylish-for-json/yaml](https://asciinema.org/a/nnrlX6GxKZsbI86dYhkMGsJ2R)
-* [plain-for-json/yaml](https://asciinema.org/a/AA2kl9UR0I04nC0pi84O8VqQr)
+* [stylish output for json/yaml](https://asciinema.org/a/nnrlX6GxKZsbI86dYhkMGsJ2R)
+* [plain output for json/yaml](https://asciinema.org/a/AA2kl9UR0I04nC0pi84O8VqQr)
+* [json output for json/yaml](https://asciinema.org/a/7Jc8U8TvmKpBr1YeiEHFEyOyU)

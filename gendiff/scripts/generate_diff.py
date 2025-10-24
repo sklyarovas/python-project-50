@@ -1,3 +1,4 @@
+from gendiff.formatters.json import json_diff
 from gendiff.formatters.plain import plain_diff
 from gendiff.formatters.stylish import stylish_diff
 from gendiff.scripts.make_diff_view import make_diff_view
@@ -14,6 +15,8 @@ def generate_diff(format='stylish', *filepaths):
             result = plain_diff(view)
         elif format == 'stylish':
             result = stylish_diff(view)
+        elif format == 'json':
+            result = json_diff(view)
         else:
             raise ValueError
     except ValueError:

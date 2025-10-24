@@ -1,0 +1,116 @@
+[
+    {
+        "result": "parent",
+        "key": "common",
+        "children": [
+            {
+                "result": "added",
+                "key": "follow",
+                "val": false
+            },
+            {
+                "result": "saved",
+                "key": "setting1",
+                "val": "Value 1"
+            },
+            {
+                "result": "removed",
+                "key": "setting2",
+                "val": 200
+            },
+            {
+                "result": "modified",
+                "key": "setting3",
+                "old_val": true,
+                "new_val": null
+            },
+            {
+                "result": "added",
+                "key": "setting4",
+                "val": "blah blah"
+            },
+            {
+                "result": "added",
+                "key": "setting5",
+                "val": {
+                    "key5": "value5"
+                }
+            },
+            {
+                "result": "parent",
+                "key": "setting6",
+                "children": [
+                    {
+                        "result": "parent",
+                        "key": "doge",
+                        "children": [
+                            {
+                                "result": "modified",
+                                "key": "wow",
+                                "old_val": "value",
+                                "new_val": "so much"
+                            }
+                        ]
+                    },
+                    {
+                        "result": "saved",
+                        "key": "key",
+                        "val": "value"
+                    },
+                    {
+                        "result": "added",
+                        "key": "ops",
+                        "val": "vops"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "result": "parent",
+        "key": "group1",
+        "children": [
+            {
+                "result": "modified",
+                "key": "baz",
+                "old_val": "bas",
+                "new_val": "bars"
+            },
+            {
+                "result": "saved",
+                "key": "foo",
+                "val": "bar"
+            },
+            {
+                "result": "modified",
+                "key": "nest",
+                "old_val": {
+                    "key": "value"
+                },
+                "new_val": "str"
+            }
+        ]
+    },
+    {
+        "result": "removed",
+        "key": "group2",
+        "val": {
+            "abc": 12345,
+            "deep": {
+                "id": 45
+            }
+        }
+    },
+    {
+        "result": "added",
+        "key": "group3",
+        "val": {
+            "deep": {
+                "id": {
+                    "number": 45
+                }
+            },
+            "fee": 100500
+        }
+    }
+]
