@@ -1,6 +1,6 @@
+from gendiff.formatters.stylish import stylish_diff
 from gendiff.scripts.make_diff_view import make_diff_view
 from gendiff.scripts.prepare import prepare_collections
-from gendiff.formatters.stylish import stylish_diff
 
 
 def generate_diff(format, *filepaths):
