@@ -5,6 +5,7 @@ from gendiff.scripts.prepare import prepare_collections
 
 OUTPUT_FORMATS = ['stylish', 'plain']
 
+
 def generate_diff(format='stylish', *filepaths):
     coll1, coll2 = prepare_collections(*filepaths)
     view = make_diff_view(coll1, coll2)

@@ -4,6 +4,7 @@ import yaml
 
 INPUT_FORMATS = ['json', 'yaml', 'yml']
 
+
 def open_file(filepath):
     try:
         if '.json' in filepath:
