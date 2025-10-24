@@ -36,7 +36,7 @@ make check
 ### Description
 
 #### Консольная утилита для определения разницы между двумя файлами
-* Поддерживаемые форматы вывода: stylish (default)
+* Поддерживаемые форматы вывода: stylish (default), plain
 
 ### Demo
 * [stylish-for-json/yaml](https://asciinema.org/a/nnrlX6GxKZsbI86dYhkMGsJ2R)
