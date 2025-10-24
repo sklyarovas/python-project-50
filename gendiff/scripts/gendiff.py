@@ -1,6 +1,6 @@
 import argparse
 
-from gendiff.main import core
+from gendiff import generate_diff
 
 
 def parser_configuration():
@@ -18,7 +18,7 @@ def parser_configuration():
 
 def main():
     args = parser_configuration()
-    core(args.format, args.first_file, args.second_file)
+    generate_diff(args.format, args.first_file, args.second_file)
 
 
 if __name__ == "__main__":

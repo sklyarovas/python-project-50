@@ -1,5 +1,3 @@
-from .scripts.make_diff import make_diff
-from .scripts.prepare import prepare_collections
+from gendiff.scripts.generate_diff import generate_diff
 
-__all__ = ['prepare_collections',
-           'make_diff']
+__all__ = ['generate_diff']
