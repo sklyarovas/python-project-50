@@ -6,7 +6,7 @@ import yaml
 def open_file(filepath):
     if '.json' in filepath:
         return json.load(open(filepath))
-    if '.yml' or '.yaml' in filepath:
+    if '.yml' in filepath or '.yaml' in filepath:
         return yaml.safe_load(open(filepath))
     raise ValueError('Unknown format')
 

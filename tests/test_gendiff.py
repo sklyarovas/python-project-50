@@ -11,11 +11,11 @@ def get_path():
     ('data1.yaml', 'data2.yml', 'stylish.txt'),
 ])
 def test_stylish_diff(get_path, data1, data2, result):
-    format = 'stylish'
+    output_format = 'stylish'
     file1_path =  get_path + data1
     file2_path =  get_path + data2
     result_path =  get_path + result
-    stylish_diff = generate_diff(format, file1_path, file2_path)
+    stylish_diff = generate_diff(output_format, file1_path, file2_path)
 
     expected = open(result_path).read()
     assert stylish_diff == expected
