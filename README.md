@@ -40,3 +40,4 @@ make check
 
 ### Demo
 * [stylish-for-json/yaml](https://asciinema.org/a/nnrlX6GxKZsbI86dYhkMGsJ2R)
+* [plain-for-json/yaml](https://asciinema.org/a/AA2kl9UR0I04nC0pi84O8VqQr)
