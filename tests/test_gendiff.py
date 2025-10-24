@@ -38,7 +38,7 @@ def test_plain_diff(get_path, data1, data2, result):
     ('data1.json', 'data2.json', 'json.txt'),
     ('data1.yaml', 'data2.yml', 'json.txt'),
 ])
-def test_plain_diff(get_path, data1, data2, result):
+def test_json_diff(get_path, data1, data2, result):
     output_format = 'json'
     file1_path =  get_path + data1
     file2_path =  get_path + data2
