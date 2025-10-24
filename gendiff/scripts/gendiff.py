@@ -18,7 +18,7 @@ def parser_configuration():
 
 def main():
     args = parser_configuration()
-    generate_diff(args.format, args.first_file, args.second_file)
+    generate_diff(args.first_file, args.second_file, args.format)
 
 
 if __name__ == "__main__":

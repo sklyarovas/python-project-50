@@ -7,8 +7,8 @@ from gendiff.scripts.prepare import prepare_collections
 OUTPUT_FORMATS = ['stylish', 'plain']
 
 
-def generate_diff(format='stylish', *filepaths):
-    coll1, coll2 = prepare_collections(*filepaths)
+def generate_diff(file1_path, file2_path, format='stylish'):
+    coll1, coll2 = prepare_collections(file1_path, file2_path)
     view = make_diff_view(coll1, coll2)
     try:
         if format == 'plain':
