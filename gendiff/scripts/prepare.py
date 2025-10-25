@@ -16,10 +16,13 @@ def prepare_collections(*filepaths):
     try:
         return [open_file(filepath) for filepath in filepaths]
     except FileNotFoundError as e:
-        return dict(error_type='file_not_found_error', 
-                    description=f'File not found: {e.filename}')
+        return {
+            'error_type': 'file_not_found_error', 
+            'description': f'File not found: {e.filename}'
+        }
 
     except ValueError:
-        return dict(error_type='input_format_error', 
-                    description='')
-
+        return {
+            'error_type': 'input_format_error', 
+            'description': ''
+        }
