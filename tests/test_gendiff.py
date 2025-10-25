@@ -65,3 +65,29 @@ def test_json_diff(get_path, data1, data2, result):
 
     expected = open(result_path).read()
     assert json_diff == expected
+
+
+@pytest.mark.parametrize('data1, data2', [
+    ('data1.json', 'data2.json'),
+])
+def test_unknown_output(get_path, data1, data2):
+    output_format = 'text'
+    file1_path = get_path + data1
+    file2_path = get_path + data2
+    result = generate_diff(file1_path, file2_path, output_format)
+
+    expected = 'Unknown output format, expected: stylish, plain, json'
+    assert result == expected
+
+
+@pytest.mark.parametrize('data1, data2', [
+    ('data1.html', 'data2.json'),
+])
+def test_unknown_inpur(get_path, data1, data2):
+    output_format = 'json'
+    file1_path = get_path + data1
+    file2_path = get_path + data2
+    result = generate_diff(file1_path, file2_path, output_format)
+
+    expected = 'Unknown input format, expected: json, yaml, yml'
+    assert result == expected
