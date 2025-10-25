@@ -12,8 +12,11 @@ INPUT_ERROR = f'Unknown input format, expected: {', '.join(INPUT_FORMATS)}'
 
 def generate_diff(file1_path, file2_path, format='stylish'):
     prepared = prepare_collections(file1_path, file2_path)
-    if prepared == 'input_format_error':
-        result = INPUT_ERROR
+    if isinstance(prepared, dict):
+        if prepared['error_type'] == 'input_format_error':
+            result = INPUT_ERROR
+        if prepared['error_type'] == 'file_not_found_error':
+            result = prepared['description']
     else:
         view = make_diff_view(*prepared)
         try:
